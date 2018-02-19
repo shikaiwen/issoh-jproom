@@ -16,12 +16,15 @@
         <![endif]-->
     <title>Free Bootstrap Flask Landing Page Template </title>
         <!--REQUIRED STYLE SHEETS-->
+        
+    <link href="{{ url_for('static', filename='assets/plugins/bootstrap/bootstrap.min.css') }}" rel="stylesheet" />
+        
     <!--MAIN BOOTSTRAP STYLE-->
-    <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="/assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" /> -->
     <!--FONT AWESOME STYLE -->
-    <link href="assets/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='assets/plugins/font-awesome/font-awesome.min.css') }}" rel="stylesheet" />
          <!--CUSTOM STYLE -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet" />
     <!--END REQUIRED STYLE SHEETS-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,7 +65,7 @@
 
             <div class="row rowblock">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 text-center">
-                <img class="img-circle titleimg" src="assets/img/1.png">
+                <img class="img-circle titleimg" src="{{url_for('static',filename='assets/img/1.png')}}">
                 <h3><strong>SHI　KAIWEN</strong></h3>
                  <p style="padding-left:40px;padding-right:40px;">
                 </p>
@@ -86,7 +89,7 @@
 
             <div class="row rowblock">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 text-center">
-                    <img class="img-circle titleimg" src="assets/img/1.png">
+                    <img class="img-circle titleimg" src="{{url_for('static',filename='assets/img/1.png')}}">
                     <h3><strong>SHI　KAIWEN</strong></h3>
                      <p style="padding-left:40px;padding-right:40px;">
                     </p>
@@ -147,16 +150,16 @@
     <!-- END MAIN CONTAINER -->
     <!--REQUIRED SCRIPTS FILES-->  <!--SCRIPTS AT END SO PAGE WILL TAKE LESS TIME TO LOAD-->
     <!--REQUIRED CORE JQUERY SCRIPTS FILE--> 
-    <script src="assets/plugins/jquery.min.js"></script>
+    <script src="{{url_for('static',filename='assets/plugins/jquery.min.js')}}"></script>
      <!--REQUIRED BOOTSTRAP SCRIPTS FILE-->
-    <script src="assets/plugins/bootstrap/bootstrap.js"></script>
+    <script src="{{url_for('static',filename='assets/plugins/bootstrap/bootstrap.js')}}"></script>
    <!--REQUIRED SCRIPT FILES FOR JQUERY COUNTDOWN-->
-    <script src="assets/plugins/countdown/jquery.countdown.js"></script>
-    <script src="assets/js/countdown.js"></script>
+    <!-- <script src="assets/plugins/countdown/jquery.countdown.js"></script> -->
+    <!-- <script src="assets/js/countdown.js"></script> -->
      <!--REQUIRED SCRIPT FOR SCROLLING MENU LINKS--> 
-     <script src="assets/plugins/jquery.easing.1.3.js"></script>
+     <script src="{{url_for('static',filename='assets/plugins/jquery.easing.1.3.js')}}"></script>
         <!--REQUIRED CUSTOM SCRIPT FILE-->    
-    <script src="assets/js/custom-color.js"></script>
+    <script src="{{url_for('static',filename='assets/js/custom-color.js')}}"></script>
       <!--END REQUIRED SCRIPTS FILES-->
 </body>
 

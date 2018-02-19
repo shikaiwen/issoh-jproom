@@ -1,8 +1,5 @@
 runtime: python
 env: flex
-entrypoint: index.html
+entrypoint: python main.py
 
-handlers:
-- url: /(.*)
-  static_files: www/\1
-  upload: (.*)
+runtime_config:
